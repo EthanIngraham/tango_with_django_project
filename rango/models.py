@@ -23,5 +23,12 @@ class Page(models.Model):
 	title = models.CharField(max_length=128)
 	url = models.URLField()
 	views = models.IntegerField(default=0)
+	
+	def save(self, *args, **kwargs):
+		super(Page, self).save(*args, **kwargs)
+		
+	class Meta:
+		verbose_name_plural = 'pages'
+		
 	def __str__(self):
 		return self.title
