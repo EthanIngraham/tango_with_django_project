@@ -6,3 +6,4 @@ db.sqlite3
 thumbs.db
 tests_chapter3.py
 tests_chapter4.py
+tests_chapter5.py
