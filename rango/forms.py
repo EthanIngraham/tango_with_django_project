@@ -30,7 +30,7 @@ class PageForm(forms.ModelForm):
 		
 		return cleaned_data
 
-class Meta:
+	class Meta:
 
-	model = Page
-	exclude = ('category',)
+		model = Page
+		exclude = ('category',)
